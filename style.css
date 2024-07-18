@@ -1,0 +1,17 @@
+// Simulate changing values for demonstration purposes
+function updateValues() {
+    document.getElementById("co-value").textContent = (Math.random() * 10).toFixed(2);
+    document.getElementById("no-value").textContent = (Math.random() * 100).toFixed(2);
+    document.getElementById("no2-value").textContent = (Math.random() * 50).toFixed(2);
+    document.getElementById("o3-value").textContent = (Math.random() * 70).toFixed(2);
+    document.getElementById("so2-value").textContent = (Math.random() * 20).toFixed(2);
+    document.getElementById("pm25-value").textContent = (Math.random() * 50).toFixed(2);
+    document.getElementById("pm10-value").textContent = (Math.random() * 100).toFixed(2);
+    document.getElementById("nh3-value").textContent = (Math.random() * 30).toFixed(2);
+  }
+  
+  // Update values every 5 seconds
+  setInterval(updateValues, 5000);
+  
+  // Initial update
+  updateValues();
